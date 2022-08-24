@@ -1,0 +1,442 @@
+.services-content-page{
+  margin-block: 3rem;
+  width: 100%;
+  overflow-x: hidden;
+  
+}
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.services-heading {
+    font-size: 3rem;
+    margin-bottom: 1.4rem;
+}
+.services-heading span{
+    color:  rgb(58, 3, 109);
+}
+.text-center{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    font-size: 15px;
+    margin-bottom: 2rem;
+}
+.services-listed{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+}
+.single-service{
+    width: 30%;
+    height: auto;
+    background-color: rgba(226, 144, 218, 1);
+    border-radius: 20px;
+    padding-bottom: 1rem;
+
+}
+.single-service h1, .single-service p{
+    text-align: center;
+}
+.single-service h1{
+    font-size: 22px;
+    padding-top: .5rem;
+}
+.single-service p{
+    font-size: 15px;
+    padding: .5rem;
+}
+.service-img{
+    width: 100%;
+    height: 400px;
+    border-radius: 20px 20px 0 0;
+}
+.service-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+.services-explained{
+    padding: 2rem 0;
+}
+.daycare-explained{
+    padding: 2rem 3rem;
+}
+.daycare-intro,.grooming-intro{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+.daycare-text, .grooming-text{
+    width: 55%;
+}
+.daycare-text h1, .grooming-text h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-block: 1rem;
+    border-bottom: 1px solid rgb(58, 3, 109);
+    width: fit-content;
+}
+.daycare-text p, .grooming-text p{
+    margin-block: 1rem;
+}
+.bold{
+    font-weight: bold;
+}
+.daycare-location, .grooming-location{
+    width: 40%;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: aliceblue;
+
+}
+.balanced-day{
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: 4rem;
+    
+}
+.balanced-day-img{
+    width: 50%;
+    height: 85vh;
+    border-radius: 20px 0 20px 0;
+}
+.balanced-day-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 3px 3px 6px rgba(58, 3, 109,.6), -3px -3px 6px rgba(58, 3, 109,.6);
+    border-radius: 20px 0 20px 0;
+}
+.balanced-day-text{
+    width: 45%;
+}
+.balanced-day-text h1{
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: capitalize;
+}
+.balanced-para{
+    font-size: 14px;
+    padding-block: 1rem;
+}
+.balanced-points{
+    padding: .2rem;
+}
+.balanced-points span{
+    font-weight: 600;
+}
+.grooming-explained{
+    background-color: rgba(226, 144, 218, 1);
+    padding: 2rem 3rem;
+}
+.grooming-services{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+.grooming-services-listed{
+    width: 45%;
+}
+.grooming-services-listed h1{
+    font-size: 26px;
+}
+.grooming-services-listed ul li{
+    margin-block: 1rem;
+}
+.poochie-img{
+    width: 45%;
+    height: 400px;
+    border-radius: 15px;
+}
+.poochie-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.our-groomer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 4rem;
+    gap: 1.5rem;
+}
+.groomer-info{
+    width: 55%;
+}
+.pampered-pups{
+    width: 45%;
+}
+.groomer-info h1, .pampered-pups h1{
+    font-size: 28px;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+.pampered-pups-img{
+    width: 100%;
+    height: 400px;
+    border-radius: 15px;
+}
+.pampered-pups-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.groomer-profile{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    margin: 1rem;
+}
+.groomer-profile .material-symbols-sharp{
+    font-size: 60px;
+}
+.groomer-name{
+    font-size: 28px;
+    font-weight: 600;
+}
+.groomer-story p{
+   font-size: 15px;
+   margin-block: .5rem;
+}
+.grooming-price-note{
+    display: flex;
+    align-items: center;
+   margin-top: 5rem;
+   background-color: aliceblue;
+   padding: 1rem;
+   gap: 1rem;
+}
+.pricing-note{
+    width: 60%;
+    font-style: italic;
+}
+.grooming-price-btn-container {
+   width: 35%;
+
+}
+.grooming-price-btn-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    border: 1px solid rgb(58, 3, 109);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: .6rem 2rem;
+    transition: all .3s ease;
+}
+.grooming-price-btn-container a:hover{
+    background-color: rgb(58, 3, 109);
+    color: #fff;
+}
+@media screen and (max-width:1060px) {
+    .enrol a{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width:1010px) {
+    .grooming-price-btn-container a{
+        font-size: 16px;
+    }
+    
+}
+
+@media screen and (max-width:970px) {
+    .services-listed{
+        flex-wrap: wrap;
+    }
+    .single-service{
+        width: 40%;
+    }
+    .daycare-explained{
+        padding: 2rem 1rem;
+    }
+    .grooming-explained{
+        padding: 2rem 1rem ;
+    }
+    
+}
+
+@media screen and (max-width:930px) {
+    .balanced-day{
+        flex-direction: column;
+    }
+    .balanced-day-img{
+        width: 80%;
+        margin: auto;
+    }
+    .balanced-day-text{
+        width: 80%;
+        margin: auto;
+    }
+    .our-groomer{
+        flex-direction: column;
+    }
+    .groomer-info, .pampered-pups{
+        width: 100%;
+        margin: auto;
+        text-align: center;
+    }
+    .groomer-info h1, .pampered-pups h1{
+        border-bottom: 1px solid rgb(200, 197, 204);
+    }
+    .groomer-profile{
+        justify-content: center;
+    }
+    .daycare-intro, .grooming-intro{
+        padding: 2rem 1.5rem;
+    }
+    .grooming-services{
+        padding: 1rem;
+    }
+    
+}
+
+@media screen and (max-width:840px) {
+    .daycare-text, .grooming-text{
+        width: 45%;
+    }
+    .daycare-location, .grooming-location{
+        width: 50%;
+    }
+    .daycare-intro,.grooming-intro{
+        align-items: center;
+    }
+}
+@media screen and (max-width:810px) {
+    .pricing-note p{
+       font-size: 14px;
+    }
+    .pricing-note{
+        width: 50%;
+    }
+    .grooming-price-btn-container{
+        width: 45%;
+    }
+}
+@media screen and (max-width:800px) {
+   
+    .daycare-location, 
+    .grooming-location,
+    .daycare-text,
+    .grooming-text{
+        width: 96%;
+        margin: auto;
+    
+    }
+    .daycare-intro,.grooming-intro{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:700px) {
+    .single-service{
+        width: 80%;
+    }
+    .services-heading{
+        font-size: 38px;
+    }
+    .text-center{
+        width: 80%;
+    }
+    .grooming-services{
+        flex-direction: column;
+    }
+    .poochie-img{
+        width: 90%;
+        height: 600px;
+        margin: auto;
+    }
+    .grooming-services-listed{
+        width: 90%;
+        margin: auto;
+        padding-top: 2rem;
+    }
+}
+@media screen and (max-width:640px) {
+    .grooming-price-note{
+        flex-direction: column;
+    }
+    .pricing-note{
+        width: 100%;
+    }
+    .grooming-price-btn-container{
+        width: 80%;
+    }
+    .balanced-day-img{
+        height: 70vh;
+        border-radius: 15px;
+    }
+    .balanced-day-img img{
+        border-radius: 15px;
+    }
+}
+@media screen and (max-width:500px) {
+    .single-service{
+        width: 90%;
+    }
+    .services-heading{
+        font-size: 32px;
+    }
+    .text-center{
+        width: 90%;
+    }
+    .poochie-img{
+        height: 500px;
+    }
+    .pampered-pups{
+        width: 90%;
+    }
+    .groomer-story{
+        font-size: 14px;
+        width: 100%;
+    }
+    .our-groomer{
+        padding: 2rem 1rem;
+    }
+    .pampered-pups-img{
+        height: 300px;
+    }
+    .services-heading{
+        font-size: 28px;
+        text-align: center;
+    }
+    .daycare-intro, .grooming-intro{
+        padding: 2rem .5rem;
+    }
+    .poochie-img{
+        height: 60vh;
+    }
+    .balanced-points p{
+        font-size: 15px;
+    }
+    .balanced-day-text,.balanced-day-img{
+        width: 96%;
+    }
+    .poochie-img{
+        width: 100%;
+    }
+    .grooming-price-btn-container{
+        width: 90%;
+    }
+   a.btn-active{
+        background-color: rgb(58, 3, 109);
+        color: #fff;
+    }
+}

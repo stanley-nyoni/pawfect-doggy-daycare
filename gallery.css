@@ -1,0 +1,347 @@
+.gallery-page h1{
+    text-align: center;
+    font-size: 36px;
+    color: rgb(58, 3, 109);
+}
+.gallery-page{
+    width: 100%;
+    padding: 2rem 3rem;
+    overflow-x: hidden;
+}
+.gallery{
+    position: relative;
+
+}
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+
+}
+.single-img{
+    width: 18%;
+    height: 30vh;
+    border-radius: 10px;
+}
+
+.single-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all .3s ease;
+}
+.single-img img:hover{
+   opacity: .8;
+   box-shadow: 1px 1px 5px rgb(58, 3, 109),  -1px -1px 5px rgb(58, 3, 109);;
+}
+.displayed-img-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(58, 3, 109, .8);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .5s ease;
+}
+.displayed-img-container.active{
+    opacity: 1;
+    pointer-events: all;
+    transition: all .5s ease;
+}
+
+.displayed-img-container i{
+    font-size: 50px;
+    color: red;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    cursor: pointer;
+}
+.displayed-img{
+    width: 70%;
+    height: 90vh;
+    margin: auto;
+    margin-top: 1rem;
+    
+}
+.displayed-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+@media screen and (max-width:800px) {
+    .single-img{
+        width: 25%;
+    }
+    
+}
+@media screen and (max-width:700px) {
+    .displayed-img{
+        height: 75vh;
+        margin-top: 2rem;
+    }
+    
+}
+@media screen and (max-width:666px) {
+    .single-img{
+        width: 18%;
+        height: 20vh;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .displayed-img-container i{
+        right: 1rem;
+    }
+    .single-img{
+        width: 25%;
+    }
+    
+}
+@media screen and (max-width:500px) {
+    .displayed-img{
+        height: 70vh;
+        width: 80%;
+    }
+    .displayed-img-container i{
+        top: 0;
+        right: 0;
+
+    }
+    
+}
+@media screen and (max-width:470px) {
+    .single-img{
+        width: 30%;
+        height: 20vh;
+    }
+    
+}
+@media screen and (max-width:430px) {
+    .single-img{
+        width: 35%;
+        height:18vh;
+    }
+    .displayed-img{
+        height: 50vh;
+        width: 90%;
+        margin-top: 3rem;
+    }
+    
+}
+@media screen and (max-width:410px) {
+    .single-img{
+        width: 45%;
+        height:18vh;
+    }
+    .displayed-img{
+        height: 60vh;
+        width: 90%;
+        margin-top: 3rem;
+    }
+    
+}
+
+
+/* About Page CSS */
+
+.about-us{
+    padding: 3rem 3rem;
+    width: 100%;
+    overflow-x: hidden;
+    background-color:aliceblue;
+}
+.about-us h1{
+    font-size: 36px;
+    color: rgb(58, 3, 109);
+    text-align: center
+}
+.about-us-story p{
+   margin-block: 1rem;
+   text-align: center;
+}
+.our-team{
+    margin-top: 2rem;
+}
+.our-team h3{
+    font-size: 30px;
+    color: rgb(58, 3, 109);
+    text-align: center;
+}
+.team{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 2rem;
+}
+.team-member{
+    width: 350px;
+    height: 300px;
+    background-color: rgb(125, 33, 211);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .3s ease;
+    
+}
+.team-member:hover{
+    box-shadow: 3px 3px 12px rgb(94, 91, 91), -3px -3px 12px rgb(94, 91, 91);
+}
+.team-member-img .material-symbols-sharp{
+    font-size: 50px;
+    border: 1px solid rgb(94, 91, 91);
+    border-radius: 50%;
+    padding: .8rem;
+    color: aliceblue;
+}
+.team-member h2{
+    text-transform: capitalize;
+    margin-block: .5rem;
+}
+
+@media screen and (max-width:812px) {
+    .team-member{
+        width: 320px;
+    }
+    
+}
+@media screen and (max-width:751px) {
+    .team-member{
+        width: 48%;
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .about-us{
+        padding: 3rem 1.5rem;
+    }
+    
+}
+@media screen and (max-width:520px) {
+
+    .team-member{
+        width: 90%;
+        height: fit-content;
+    }
+}
+@media screen and (max-width:400px) {
+
+    .about-us h1{
+        font-size: 32px;
+    }
+    .about-us-story p{
+        font-size: 15px;
+     }
+     .our-team h3{
+        font-size: 26px;
+     }
+     .about-us{
+        padding: 3rem .6rem;
+    }
+    .team-member{
+        width: 90%;
+        
+    }
+}
+
+/* Pricing Css */
+
+.pricing{
+    padding: 3rem 3rem;
+    background-color: rgb(236, 226, 247);
+}
+.doggy-daycare-pricing{
+    margin-block: 2rem;
+}
+.doggy-daycare-pricing h1{
+    color: rgb(58, 3, 109);
+    font-size: 32px;
+    font-weight: 500;
+    border-bottom: 1px solid rgb(125, 33, 211);
+    width: fit-content;
+    margin-bottom: 1rem;
+}
+.doggy-daycare-pricing p{
+    margin-block: .5rem;
+}
+.pricing-btn a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    border: 1px solid rgb(58, 3, 109);
+    border-radius: 10px;
+    font-size: 20px;
+    text-align: center;
+    padding: .6rem 2rem;
+    margin-top: 3rem;
+    transition: all .3s ease
+}
+.pricing-btn a:hover{
+    background-color: rgb(58, 3, 109);
+    color: #fff;
+
+}
+.pricing-heading{
+    color: rgb(58, 3, 109);
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 36px;
+}
+
+@media screen  and (max-width:700px){
+    .doggy-daycare-pricing{
+        text-align: center;
+        padding-bottom: 1rem;
+        border-bottom: 1px solid rgb(125, 33, 211);
+    }
+    .doggy-daycare-pricing:last-child{
+        border: 0;
+    }
+    .doggy-daycare-pricing h1{
+        text-align: center;
+        border: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width:500px) {
+    .pricing-btn a{
+        background-color: rgb(58, 3, 109);
+        color: #fff;
+    
+    }   
+    
+}
+@media screen and (max-width:400px) {
+    .pricing p{
+        font-size: 14px;
+    } 
+    .doggy-daycare-pricing h1{
+        font-size: 28px;
+    }  
+    .pricing-heading{
+        font-size: 32px;
+    }
+    .pricing-btn a{
+        font-size: 16px;
+    } 
+    .pricing{
+        padding: 2rem .5rem;
+    }
+
+}

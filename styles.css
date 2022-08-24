@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Narrow&family=Bungee&family=Outfit&family=Poppins:wght@300;400;500;600;700&family=Ramabhadra&family=Roboto&family=Roboto+Condensed:wght@300&family=Sacramento&family=Secular+One&family=Staatliches&family=Work+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    width: 100%;
+    height: 6rem;
+    background-color: rgba(226, 144, 218, 1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+   
+}
+.logo-wrapper a{
+    text-decoration: none;
+    color: rgb(58, 3, 109);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.brand-name{
+    font-size: 2rem;
+}
+.logo .material-symbols-sharp{
+    font-size: 3rem;
+    padding: .5rem;
+    border: 1px solid rgb(58, 3, 109);
+    border-radius: 50%;
+}
+.nav{
+    transition:  all .5s ease;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    transition:  all .5s ease;
+    
+
+}
+.nav ul li{
+    list-style: none;
+    
+}
+.nav ul li a{
+    text-decoration: none;
+    color: rgb(58, 3, 109);
+    font-size: 20px;
+    font-weight: 600;
+    transition: color .2s;
+    
+    
+}
+.nav ul li a:hover{
+  color: #fff;
+}
+.menu-toggle{
+    color: rgb(58, 3, 109);
+    font-size: 35px;
+    cursor: pointer;
+    display: none;
+}
+.showcase{
+    width: 100%;
+    height: 90vh;
+    background-image: url(images/pexels-pixabay-46523.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 12rem;
+    position: relative;
+}
+.intro-text{
+    background-color: rgb(58, 3, 109);
+    color: #fff;
+    width: 300px;
+    height: 150px;
+    padding: 1rem;
+    border-radius: 20px;
+    text-align: center;
+    text-justify: inter-cluster;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    transition: all .5s;
+}
+.promo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    width: 100%;
+    height: 3rem;
+    background-color: rgb(58, 3, 109);
+    justify-content: space-around;
+    font-size: 20px;
+
+}
+.promo-text{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+.info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    
+}
+.pawfect-info{
+    width: 65%;
+}
+.pawfect-info h1{
+    font-size: 3rem;
+}
+.pawfect-info h1 span{
+    color: rgb(58, 3, 109);
+}
+.pawfect-info p{
+    margin: 1rem;
+}
+.contact-info{
+    width: 30%;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: aliceblue;
+
+}
+.location{
+    display: flex;
+    gap: .3rem;
+
+}
+.location i{
+    font-size: 30px;
+    color: rgb(58, 3, 109);
+}
+.contact{
+  margin: 1rem;
+}
+.contact-info h2{
+    font-size: 26px;
+    padding: 1rem 0;
+}
+.contact h4 {
+    font-size: 24px;
+}
+.enrol{
+    display: flex;
+    align-items: center;
+  
+}
+.enrol a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    border: 1px solid rgb(58, 3, 109);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    padding: .6rem 2rem;
+    transition: all .3s ease;
+}
+.enrol a i{
+    font-size: 26px;
+}
+.enrol a:hover{
+    background-color: rgb(58, 3, 109);
+    color: #fff;
+
+}
+.client-reviews{
+    display: flex;
+    width: 90%;
+    height: 80vh;
+    padding: 2rem 3rem;
+    gap: 3rem;
+    position: relative;
+    align-items: center;
+}
+.review-image{
+   width: 100%;
+   height: 70vh;
+   border-radius: 20px;
+
+
+}
+.review-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.reviews{
+    height: fit-content;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.review-card-container{
+    position: relative;
+    width: 400px;
+    overflow: hidden;
+    margin-left: 50px;
+    height: fit-content;
+
+
+
+}
+.review-card{
+    width: 400px;
+    padding: 1rem;
+    position: relative;
+    transition: all .5s ease-in-out;
+   
+}
+.client-content{
+    background-color: rgb(58, 3, 109);
+    color: #fff;
+    border-radius: 20px 20px 0 0 ; 
+    padding: 1rem;
+}
+.client-img{
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(226, 144, 218, 1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(226, 144, 218, 1);
+    margin-left: 1rem;
+}
+.client-img span{
+   font-size: 3rem;
+   color: rgb(58, 3, 109);
+    
+}
+.review-text{
+    border: 1px solid rgb(58, 3, 109);
+    padding: 1rem;
+    border-radius: 0 0 20px 20px;
+}
+#card1{
+   top: 0;
+   right: 0;
+}
+#card2{
+    position: absolute;
+    top: 0;
+    right: -800px;
+}
+#card3{
+    position: absolute;
+    top: 0;
+    right: -1200px;
+}
+#card4{
+    position: absolute;
+    top: 0;
+    right: -1600px;
+}
+#card5{
+    position: absolute;
+    top: 0;
+    right: -2000px;
+}
+.review-nav-container{
+    display: flex;
+    gap: .8rem;
+    margin-top: 2rem;
+}
+.review-nav{
+    padding: .3rem;
+    border-radius: 50%;
+    border: 1px solid rgb(58, 3, 109);
+    background-color: #fff;
+    cursor: pointer;
+}
+#nav1{
+    background-color: rgb(58, 3, 109);
+}
+.why-us{
+    margin-top: 2rem;
+    padding: 0 3rem;
+}
+.why-us h1{
+    text-align: center;
+    font-size: 2.4rem;
+}
+.why-us h1 span{
+    color: rgb(58, 3, 109);
+}
+.reasons{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.reason-card{
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: rgba(226, 144, 218, 1);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.reason-card:hover{
+    transform: translateY(-5px);
+    opacity: .9;
+    box-shadow: 1px 1px 5px rgb(58, 3, 109),  -1px -1px 5px rgb(58, 3, 109);
+}
+.reason-img span{
+    font-size: 4rem;
+    color: rgb(58, 3, 109);
+}
+.mini-footer{
+    background-color: rgb(118, 26, 204);
+    width: 100%;
+    height: fit-content;
+    padding: 2rem 3rem;
+    color: #fff;
+    margin-top: 3rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer-logo .material-symbols-sharp{
+    border: 2px solid rgba(226, 144, 218, 1);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.4rem;
+}
+.footer-brand-name{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+.each-section h3{
+    margin-bottom: .6rem;
+    font-size: 22px;
+}
+.each-section h4{
+    margin: 0 .5rem;
+    font-size: 16px;
+    font-weight: normal;
+}
+.each-section p{
+    font-size: 14px;
+}
+.subscribe h3{
+    font-size: 22px;
+    margin-bottom: .6rem;
+}
+.subscribe form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+}
+.subscribe form input{
+    padding: .5rem .8rem;
+    font-size: 16px;
+}
+.sign-up{
+    border: 1px solid rgb(58, 3, 109);
+    border-radius: 10px;
+    padding: .5rem 2rem!important;
+    cursor: pointer;
+    background-color: rgb(58, 3, 109);
+    transition: all .2s ease;
+    color: #fff;
+}
+.sign-up:hover{
+    background-color: #fff;
+    color: rgb(58, 3, 109);
+}
+.footer{
+    width: 100%;
+    background-color: rgb(240, 51, 221);
+    color: #fff;
+    padding: 2rem 3rem;
+}
+.links{
+    display: flex;
+    gap: 8rem;
+    
+    
+}
+.footer-services{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.footer-services h3{
+    font-size: 22px;
+}
+.footer-services a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease;
+}
+.footer-services a:hover{
+    color: rgb(58, 3, 109);
+}
+.footer-about-us{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.quick-links{
+    display: flex;
+    gap: 5rem;
+    
+}
+.links1{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+    
+}
+.policy{
+    display: flex;
+}
+.footer-about-us h3{
+    font-size: 22px;
+}
+.footer-about-us span {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+}
+.footer-about-us a{
+    text-decoration: none;
+    color: #fff;
+    transition: all .3s ease;
+}
+.footer-about-us a:hover{
+    color: rgb(58, 3, 109);
+}
+.socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-size: 26px;
+    gap: 1rem;
+}
+.socials i{
+    background-color: #fff;
+    padding: .2rem;
+    color: rgb(58, 3, 109);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+.socials i:hover{
+    transform: translateY(-10px);
+}
+.copyright{
+    display: flex;
+    gap: 3rem;
+    justify-content: space-around;
+}
+.copyright p{
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:1040px) {
+    .nav ul li a{
+        font-size: 18px;
+    }
+    
+}
+@media screen and (max-width:970px) {
+    .nav ul{
+        gap: 1rem;
+    }
+    .contact p{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:940px) {
+  
+    .contact h4{
+        font-size: 18px;
+    }
+    .client-reviews{
+        flex-direction: column;
+    }
+    .review-image{
+        display: none;
+
+    }
+
+}
+
+@media screen and (max-width:900px) {
+  .pawfect-info h1{
+    font-size: 34px;
+  }
+  .why-us h1{
+    font-size: 30px;
+  }
+  .pawfect-info p{
+    font-size: 14px;
+  }
+  .contact-info h2{
+    font-size: 22px;
+  }
+  .contact-info{
+    width: 40%;
+  }
+  .pawfect-info{
+    width: 55%;
+  }
+}
+
+
+@media screen and (max-width:870px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+        width: 300px;
+        background-color:rgba(226, 144, 218, 1);
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        padding: 1rem;
+        height: 70vh;
+        
+        
+    }
+    .menu-toggle{
+        display: block;
+    }
+  .nav.active ul{
+    display: flex; 
+  }
+  .showcase{
+    padding-right: 4rem;
+  }
+}
+@media screen and (max-width:800px) {
+    .info{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact-info{
+        width: 100%;
+    }
+    .pawfect-info{
+        width: 100%;
+        text-align: center;
+    }
+    .showcase{
+        padding-right: 3rem;
+    }
+    .links{
+        gap: 5rem;
+    }
+    
+}
+
+@media screen and (max-width:715px) {
+    .mini-footer{
+        gap: .5rem;
+        flex-wrap: wrap;
+        
+    }
+    .mini-footer{
+        padding: 1rem 1rem;
+    }
+    .footer{
+        padding: 1rem 1rem;
+    }
+    .review-card{
+        margin: auto;
+    }
+    .promo-text{
+        font-size: 16px;
+    }
+    .links{
+        gap: 3rem;
+    }
+    .each-section{
+        width: 40%;
+    }
+   .subscribe{
+    width: 100%;
+   }
+    .subscribe form{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .subscribe form input{
+        width: 100%;
+    }
+    .links a, .copyright p{
+        font-size: 14px;
+    }
+    .quick-links{
+        gap: 1rem;
+    }
+
+    
+}
+@media screen and (max-width:600px) {
+    .brand-name{
+        font-size: 1.8rem;
+    }    
+    .logo .material-symbols-sharp{
+        font-size: 2.4rem;
+    }
+    .intro-text{
+        position: absolute;
+        bottom: 5rem;
+    }
+}
+@media screen and (max-width:500px) {
+    a.btn-active{
+        background-color: rgb(58, 3, 109);
+        color: #fff;
+    }
+}
+@media screen and (max-width:460px) {
+     
+    .intro-text{
+        width: 250px;
+        height: 130px;
+        font-size: 18px;
+    }
+    .each-section p{
+        font-size: 12px;
+        text-align: center;
+    }
+    .each-section h4{
+        font-size: 14px;
+    }
+    .footer p{
+        text-align: center;
+    }
+    .reviews{
+        width: 450px;
+    }
+    .review-card-container{
+        width: 250px;
+    }
+    .review-card{
+        width: 250px;
+    }
+    .review-text p{
+        font-size: 14px;
+        text-align: center;
+    }
+    .why-us h1{
+        font-size: 24px;
+    }
+    .contact-info h2{
+        font-size: 20px;
+    }
+    .pawfect-info h1{
+        font-size: 24px;
+    }
+    .promo-text {
+        font-size: 14px;
+    }
+    .pawfect-info p{
+        font-size: 13px;
+    }
+    .reason-card{
+        height: fit-content;
+    }
+    .reason-card p{
+        font-size: 14px;
+    }
+    .reason-card h3{
+        font-size: 18px;
+    }
+    .reason-card span{
+        font-size: 34px;
+    }
+    .mini-footer{
+        gap: .4rem;
+    }
+    .each-section p{
+        font-size: 10px;
+    }
+    .footer a{
+        font-size: 12px;
+    }
+    .links{
+        gap: .5rem;
+    }
+    body{
+        overflow-x: hidden;
+    }
+}
